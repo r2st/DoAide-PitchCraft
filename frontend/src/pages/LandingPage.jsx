@@ -47,10 +47,11 @@ function useTypewriter(lines, typingSpeed = 50, pauseMs = 2000) {
 }
 
 const TOOLS = [
-  { icon: "📊", title: "Valuation Calculator", desc: "Estimate your pre-money valuation using industry multiples", to: "/valuation" },
+  { icon: "📊", title: "Valuation Calculator", desc: "Estimate your pre-money valuation using industry multiples", to: "/tools/valuation-calculator" },
   { icon: "🎯", title: "Pitch Deck Generator", desc: "AI generates a slide-by-slide outline for your deck", to: "/generator" },
   { icon: "💰", title: "Financial Model", desc: "Build a 3-year P&L projection in seconds", to: "/model" },
-  { icon: "✅", title: "Readiness Checker", desc: "Score your pitch deck readiness with 10 questions", to: "/checker" },
+  { icon: "🔥", title: "Burn Rate Calculator", desc: "Calculate your runway and monthly cash burn rate", to: "/tools/burn-rate-calculator" },
+  { icon: "✅", title: "Readiness Checker", desc: "Score your pitch deck readiness with 10 questions", to: "/tools/investor-readiness-quiz" },
 ];
 
 const FEATURES = [

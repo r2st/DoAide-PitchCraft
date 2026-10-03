@@ -4,10 +4,11 @@ import { usePageTitle } from "../hooks/usePageTitle";
 
 const PAGES = [
   { section: "Tools", links: [
-    { to: "/valuation", label: "Startup Valuation Calculator" },
+    { to: "/tools/valuation-calculator", label: "Startup Valuation Calculator" },
     { to: "/generator", label: "AI Pitch Deck Generator" },
     { to: "/model", label: "Financial Model Builder" },
-    { to: "/checker", label: "Pitch Deck Readiness Checker" },
+    { to: "/tools/burn-rate-calculator", label: "Burn Rate Calculator" },
+    { to: "/tools/investor-readiness-quiz", label: "Investor Readiness Quiz" },
   ]},
   { section: "Resources", links: [
     { to: "/blog", label: "Blog" },

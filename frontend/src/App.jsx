@@ -13,6 +13,7 @@ import LandingPage from "./pages/LandingPage";
 import ModelPage from "./pages/ModelPage";
 import PricingPage from "./pages/PricingPage";
 import SitemapPage from "./pages/SitemapPage";
+import BurnRatePage from "./pages/BurnRatePage";
 import ValuationPage from "./pages/ValuationPage";
 
 function Protected({ children }) {
@@ -59,9 +60,13 @@ export default function App() {
 
       {/* Free tools — no login required */}
       <Route path="/valuation" element={<ValuationPage />} />
+      <Route path="/tools/valuation-calculator" element={<ValuationPage />} />
       <Route path="/generator" element={<GeneratorPage />} />
       <Route path="/model" element={<ModelPage />} />
+      <Route path="/tools/burn-rate-calculator" element={<BurnRatePage />} />
+      <Route path="/burn-rate" element={<BurnRatePage />} />
       <Route path="/checker" element={<CheckerPage />} />
+      <Route path="/tools/investor-readiness-quiz" element={<CheckerPage />} />
 
       {/* SEO & content pages */}
       <Route path="/blog" element={<BlogListPage />} />
