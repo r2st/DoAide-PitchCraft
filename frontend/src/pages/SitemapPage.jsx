@@ -1,0 +1,64 @@
+import { Link } from "react-router-dom";
+import ThemeToggle from "../components/ThemeToggle";
+import { usePageTitle } from "../hooks/usePageTitle";
+
+const PAGES = [
+  { section: "Tools", links: [
+    { to: "/valuation", label: "Startup Valuation Calculator" },
+    { to: "/generator", label: "AI Pitch Deck Generator" },
+    { to: "/model", label: "Financial Model Builder" },
+    { to: "/checker", label: "Pitch Deck Readiness Checker" },
+  ]},
+  { section: "Resources", links: [
+    { to: "/blog", label: "Blog" },
+    { to: "/blog/how-to-create-winning-pitch-deck", label: "How to Create a Winning Pitch Deck" },
+    { to: "/blog/startup-valuation-methods-explained", label: "Startup Valuation Methods Explained" },
+    { to: "/blog/financial-model-first-time-founders", label: "Building Your First Financial Model" },
+  ]},
+  { section: "Product", links: [
+    { to: "/pricing", label: "Pricing" },
+    { to: "/embed", label: "Embed Widget" },
+    { to: "/sitemap", label: "Sitemap" },
+  ]},
+];
+
+export default function SitemapPage() {
+  usePageTitle("Sitemap");
+
+  return (
+    <div className="min-h-screen bg-canvas">
+      <header className="flex items-center max-w-5xl w-full mx-auto px-5 py-5">
+        <Link to="/" className="flex items-center gap-2.5">
+          <svg viewBox="0 0 40 40" className="w-8 h-8" aria-hidden="true">
+            <rect x="2" y="2" width="36" height="36" rx="8" fill="var(--brand)" />
+            <circle cx="14" cy="16" r="3" fill="var(--brand-text)" />
+            <circle cx="26" cy="16" r="3" fill="var(--brand-text)" />
+            <path d="M12 26 Q20 32 28 26" stroke="var(--brand-text)" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+          </svg>
+          <span className="font-display text-xl tracking-tight">Pitch<em className="text-brand">Craft</em></span>
+        </Link>
+        <div className="ml-auto"><ThemeToggle /></div>
+      </header>
+
+      <main className="max-w-3xl mx-auto px-5 py-8">
+        <h1 className="font-display text-3xl mb-8">Sitemap</h1>
+        <div className="grid sm:grid-cols-3 gap-8">
+          {PAGES.map((section) => (
+            <div key={section.section}>
+              <h2 className="font-semibold text-ink-strong mb-3">{section.section}</h2>
+              <ul className="space-y-2">
+                {section.links.map((link) => (
+                  <li key={link.to}>
+                    <Link to={link.to} className="text-sm text-ink-soft hover:text-brand transition-colors">
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </main>
+    </div>
+  );
+}
