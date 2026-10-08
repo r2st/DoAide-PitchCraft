@@ -13,3 +13,7 @@ node_modules/
 frontend/dist/
 frontend/.vite/
 *.log
+
+# Environment
+.env*
+!.env.example
