@@ -52,6 +52,9 @@ const TOOLS = [
   { icon: "💰", title: "Financial Model", desc: "Build a 3-year P&L projection in seconds", to: "/model" },
   { icon: "🔥", title: "Burn Rate Calculator", desc: "Calculate your runway and monthly cash burn rate", to: "/tools/burn-rate-calculator" },
   { icon: "✅", title: "Readiness Checker", desc: "Score your pitch deck readiness with 10 questions", to: "/tools/investor-readiness-quiz" },
+  { icon: "🎤", title: "Elevator Pitch Generator", desc: "AI-crafted 30/60/90-second elevator pitches for your startup", to: "/tools/elevator-pitch-generator" },
+  { icon: "❓", title: "Investor Q&A Prep", desc: "Prepare for tough investor questions with AI-generated answers", to: "/tools/investor-qa-prep" },
+  { icon: "📋", title: "Pitch Deck Outline", desc: "Instant structured pitch deck outline — no AI, works offline", to: "/tools/pitch-deck-outline" },
 ];
 
 const FEATURES = [

@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 import app.models  # noqa: F401
 from app.core.config import settings
-from app.routers import auth, checker, generator, health, model, valuation
+from app.routers import auth, checker, elevator_pitch, generator, health, investor_qa, model, valuation
 
 logger = logging.getLogger(__name__)
 
@@ -35,6 +35,8 @@ def create_app() -> FastAPI:
     application.include_router(generator.router, prefix=prefix)
     application.include_router(model.router, prefix=prefix)
     application.include_router(checker.router, prefix=prefix)
+    application.include_router(elevator_pitch.router, prefix=prefix)
+    application.include_router(investor_qa.router, prefix=prefix)
 
     @application.get("/", include_in_schema=False)
     def root() -> dict:

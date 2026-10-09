@@ -35,7 +35,7 @@ class Settings(BaseSettings):
     db_pool_size: int = Field(default=10, ge=1, le=100)
     db_max_overflow: int = Field(default=5, ge=0, le=100)
 
-    # AI (OpenRouter)
+    # AI (OpenRouter — legacy)
     openrouter_api_key: str = ""
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     openrouter_model: str = "meta-llama/llama-4-maverick:free"
@@ -43,6 +43,11 @@ class Settings(BaseSettings):
     openrouter_app_title: str = "PitchCraft"
     openrouter_timeout_seconds: float = 90.0
     openrouter_max_attempts: int = Field(default=3, ge=1, le=10)
+
+    # AI (Gemini)
+    gemini_api_key: str = ""
+    gemini_model: str = "gemini-2.5-flash"
+    gemini_timeout_seconds: float = 90.0
 
     # Free tier limits
     free_tier_monthly_limit: int = 3

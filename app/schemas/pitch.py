@@ -82,3 +82,38 @@ class CheckerResult(BaseModel):
     grade: str
     recommendations: list[str]
     strengths: list[str]
+
+
+class ElevatorPitchRequest(BaseModel):
+    company_name: str
+    problem: str
+    solution: str
+    target_audience: str
+    unique_value: str
+
+
+class ElevatorPitchResponse(BaseModel):
+    company_name: str
+    pitches: dict[str, str]
+    tips: list[str]
+
+
+class InvestorQARequest(BaseModel):
+    company_name: str
+    industry: str
+    stage: str
+    problem: str
+    solution: str
+    business_model: str
+    traction: str = ""
+
+
+class InvestorQAItem(BaseModel):
+    question: str
+    answer: str
+    category: str
+
+
+class InvestorQAResponse(BaseModel):
+    company_name: str
+    questions: list[InvestorQAItem]

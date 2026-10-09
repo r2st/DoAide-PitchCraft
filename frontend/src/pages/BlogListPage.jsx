@@ -4,6 +4,27 @@ import { usePageTitle } from "../hooks/usePageTitle";
 
 const POSTS = [
   {
+    slug: "perfect-elevator-pitch-formula",
+    title: "The Perfect Elevator Pitch: A Step-by-Step Formula for Founders",
+    excerpt: "Master the art of the 30-second pitch with a proven formula that hooks investors and opens doors.",
+    date: "2024-12-01",
+    readTime: "6 min read",
+  },
+  {
+    slug: "top-investor-questions-startup-founders",
+    title: "Top 20 Investor Questions Every Startup Founder Must Prepare For",
+    excerpt: "From 'What's your moat?' to 'Why now?' — the questions VCs always ask and how to answer them confidently.",
+    date: "2024-12-05",
+    readTime: "9 min read",
+  },
+  {
+    slug: "pitch-deck-mistakes-to-avoid",
+    title: "7 Pitch Deck Mistakes That Kill Your Fundraising Chances",
+    excerpt: "Common pitch deck mistakes founders make and actionable fixes to make your deck stand out to investors.",
+    date: "2024-12-10",
+    readTime: "7 min read",
+  },
+  {
     slug: "how-to-create-winning-pitch-deck",
     title: "How to Create a Winning Pitch Deck in 2024",
     excerpt: "Learn the 12 essential slides every investor expects and how to craft a compelling narrative that gets you funded.",

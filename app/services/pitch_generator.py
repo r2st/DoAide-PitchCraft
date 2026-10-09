@@ -1,8 +1,6 @@
 from __future__ import annotations
 
-import json
-
-from app.services.openrouter_client import OpenRouterError, chat_completion, extract_json_object
+from app.services.gemini_client import GeminiError, chat_completion, extract_json_object
 
 
 def generate_outline(
@@ -48,7 +46,7 @@ Each slide should have 3-5 specific bullets and detailed speaker notes."""
     raw = chat_completion(messages, max_tokens=4000, temperature=0.3)
     parsed = extract_json_object(raw)
     if not parsed or "slides" not in parsed:
-        raise OpenRouterError("AI did not return a valid pitch outline")
+        raise GeminiError("AI did not return a valid pitch outline")
 
     return {
         "company_name": company_name,

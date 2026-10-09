@@ -7,10 +7,13 @@ import BlogListPage from "./pages/BlogListPage";
 import BlogPostPage from "./pages/BlogPostPage";
 import CheckerPage from "./pages/CheckerPage";
 import DashboardPage from "./pages/DashboardPage";
+import ElevatorPitchPage from "./pages/ElevatorPitchPage";
 import EmbedPage from "./pages/EmbedPage";
 import GeneratorPage from "./pages/GeneratorPage";
+import InvestorQAPage from "./pages/InvestorQAPage";
 import LandingPage from "./pages/LandingPage";
 import ModelPage from "./pages/ModelPage";
+import PitchOutlinePage from "./pages/PitchOutlinePage";
 import PricingPage from "./pages/PricingPage";
 import SitemapPage from "./pages/SitemapPage";
 import BurnRatePage from "./pages/BurnRatePage";
@@ -67,6 +70,12 @@ export default function App() {
       <Route path="/burn-rate" element={<BurnRatePage />} />
       <Route path="/checker" element={<CheckerPage />} />
       <Route path="/tools/investor-readiness-quiz" element={<CheckerPage />} />
+      <Route path="/tools/elevator-pitch-generator" element={<ElevatorPitchPage />} />
+      <Route path="/elevator-pitch" element={<ElevatorPitchPage />} />
+      <Route path="/tools/investor-qa-prep" element={<InvestorQAPage />} />
+      <Route path="/investor-qa" element={<InvestorQAPage />} />
+      <Route path="/tools/pitch-deck-outline" element={<PitchOutlinePage />} />
+      <Route path="/pitch-outline" element={<PitchOutlinePage />} />
 
       {/* SEO & content pages */}
       <Route path="/blog" element={<BlogListPage />} />

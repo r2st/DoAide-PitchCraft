@@ -132,4 +132,6 @@ export const api = {
   projectFinancials: (payload) => request("/model/project", { method: "POST", body: payload, auth: false }),
   getCheckerQuestions: ({ signal } = {}) => request("/checker/questions", { auth: false, signal }),
   evaluateChecker: (payload) => request("/checker/evaluate", { method: "POST", body: payload, auth: false }),
+  generateElevatorPitch: (payload) => request("/elevator-pitch/generate", { method: "POST", body: payload, auth: false }),
+  generateInvestorQA: (payload) => request("/investor-qa/generate", { method: "POST", body: payload, auth: false }),
 };
