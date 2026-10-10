@@ -4,6 +4,27 @@ import { usePageTitle } from "../hooks/usePageTitle";
 
 const POSTS = [
   {
+    slug: "startup-funding-india-guide-2025",
+    title: "Complete Guide to Startup Funding in India 2025: Seed to Series A",
+    excerpt: "Everything Indian founders need to know about raising startup funding in 2025 — stages, top VCs, valuations, government schemes, and how to prepare your pitch.",
+    date: "2025-04-01",
+    readTime: "12 min read",
+  },
+  {
+    slug: "investor-pitch-tips-india",
+    title: "How to Pitch to Indian Investors: 10 Tips That Actually Work in 2025",
+    excerpt: "Actionable tips for pitching to Indian VCs and angel networks — unit economics, warm intros, INR financials, and what Indian investors really look for.",
+    date: "2025-03-22",
+    readTime: "10 min read",
+  },
+  {
+    slug: "pitch-deck-templates-indian-startups",
+    title: "Best Pitch Deck Templates for Indian Startups: Formats That Win Funding in 2025",
+    excerpt: "Discover pitch deck templates tailored for Indian startups — formats used by Sequoia Surge, 100X.VC, and YC-backed Indian founders.",
+    date: "2025-03-15",
+    readTime: "11 min read",
+  },
+  {
     slug: "perfect-elevator-pitch-formula",
     title: "The Perfect Elevator Pitch: A Step-by-Step Formula for Founders",
     excerpt: "Master the art of the 30-second pitch with a proven formula that hooks investors and opens doors.",
